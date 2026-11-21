@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Web Summit Lisbon 2026 · Attendee &amp; Speaker Landscape</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f6f7f9;--cd:#fff;--tx:#14181f;--mu:#5d6675;--bd:#e2e6ec;--ac:#0b5fff;--s:#d92d20;--f:#b25e00;--e:#0a7d5a;--c:#6b7280;--i:#6d28d9;--p:#0e7490;--m:#9333ea}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1116;--cd:#171c24;--tx:#e8ebf0;--mu:#9aa4b2;--bd:#2a313c;--ac:#6b9bff;--s:#ff7b72;--f:#f0b05a;--e:#4ccf9f;--c:#9aa4b2;--i:#b79cff;--p:#5fd0e6;--m:#d2a8ff}}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif}
+.w{max-width:1150px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:24px;margin:0 0 4px}.sub{color:var(--mu);margin:0 0 12px}
+.box{background:var(--cd);border:1px solid var(--bd);border-radius:10px;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--mu)}
+.box.imp{border-left:4px solid var(--ac)}summary{cursor:pointer;font-weight:600;color:var(--tx)}
+textarea{width:100%;height:110px;margin-top:8px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:8px;padding:8px;font:12px monospace;box-sizing:border-box}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:8px}
+button,.fb{border:1px solid var(--bd);background:var(--cd);color:var(--tx);border-radius:999px;padding:6px 13px;font-size:13.5px;cursor:pointer}
+button.on,button.go{background:var(--ac);border-color:var(--ac);color:#fff}
+.st{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.st div{background:var(--cd);border:1px solid var(--bd);border-radius:10px;padding:6px 12px;min-width:86px}.st b{display:block;font-size:19px}.st span{font-size:12px;color:var(--mu)}
+.bar{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+input[type=search]{flex:1;min-width:150px;border:1px solid var(--bd);background:var(--cd);color:var(--tx);border-radius:999px;padding:7px 14px;font-size:14px}
+select{border:1px solid var(--bd);background:var(--cd);color:var(--tx);border-radius:999px;padding:6px 10px;font-size:13.5px}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.cd{background:var(--cd);border:1px solid var(--bd);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:6px}
+.nm{font-weight:650;font-size:15.5px}.ti{font-size:12.5px;color:var(--mu)}
+.tg{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+.t{font-size:11px;border-radius:5px;padding:0 6px;border:1px solid currentColor;white-space:nowrap}
+.t.s{color:var(--s)}.t.f{color:var(--f)}.t.e{color:var(--e)}.t.c{color:var(--c)}.t.i{color:var(--i)}.t.p{color:var(--p)}.t.m{color:var(--m)}.t.k{color:var(--ac)}
+.pr{color:var(--f);letter-spacing:2px;font-size:12px}
+.why{font-size:13px;margin:0}
+.hi{border-color:var(--s);box-shadow:0 0 0 1px var(--s) inset}.hf{border-color:var(--f);box-shadow:0 0 0 1px var(--f) inset}
+.more{display:block;margin:16px auto}.cd.sp{border-left:4px solid var(--ac)}
+</style></head><body><div class="w">
+<h1>Web Summit Lisbon 2026 · Attendee &amp; Speaker Landscape</h1>
+<p class="sub">Nov 9–12 · Featured attendees &amp; speakers · <span id="n"></span> people loaded</p>
+<div class="box imp"><details id="det"><summary>Load the full list (paste or upload the text you copied from the Web Summit page)</summary>
+<p>The page ships with about 300 people built in; to load every one of the 1,000+ entries, this box parses them in your browser instead. Paste the raw text of the “Meet our 2026 attendees” page (after clicking “Load More” until the end), or choose the .txt file. Nothing is uploaded anywhere; the text is parsed locally and tagged by title and company.</p>
+<textarea id="ta" placeholder="Paste the full page text here…"></textarea>
+<div class="row"><button class="go" id="gob">Import &amp; classify</button><input type="file" id="fi" accept=".txt,.md,.csv"><span id="msg"></span></div><p style="margin-top:12px"><b>Step 2 – Speakers:</b> paste the text of the “Meet our 2026 speakers” page (after “Load More”) to mark who is a speaker and add any speakers missing from step 1.</p><textarea id="ta2" placeholder="Paste the speakers page text here…"></textarea><div class="row"><button class="go" id="gob2">Import speakers</button><input type="file" id="fi2" accept=".txt,.md,.csv"><span id="msg2"></span></div></details></div>
+<div class="box">Tags and priorities are my judgment from title and company only (not official data); starred curated notes cover the people most relevant to AgiBot sales and to your future robotics fundraising. Speakers have a blue left border and a “Speaker” tag (use the dropdown to show speakers only or attendees only); they rank above attendees of equal priority. Red outline = top sales target, orange outline = top finance contact. Speaker flags come from the speakers list you import in step 2.</div>
+<div class="st" id="st"></div>
+<div class="bar" id="bar"></div>
+<div class="g" id="g"></div><button class="more" id="mb" style="display:none"></button>
+</div>
+<script>
+var B=[
+["Fei Xu","CMO","Xiaomi Group","China","s",3,"Consumer channel and brand reach for display scenarios; Xiaomi also builds robots, so expect co-opetition. Open with European channel and demo-venue ideas."],
+["Irene Long","CSO","Rokid","China","s e",3,"AI-glasses maker: AR teleoperation, human-robot interaction, showroom use cases. Ask about European enterprise clients and mutual intros."],
+["Ling Ge","Chief Investment and Strategy Officer (EMEA)","Tencent","United Kingdom","s f",3,"Strategic investor with European corporate and ecosystem access; useful for both sales and fundraising."],
+["Fred Sun","General Manager","Tencent Cloud Europe","France","s e",3,"Cloud and enterprise channel in Europe for Chinese tech; possible joint go-to-market for robotics-as-a-service."],
+["Peter Koerte","Member of the Managing Board; President Smart Infrastructure","Siemens AG","Germany","s",3,"Industrial and building infrastructure buyer/integrator; strong pilot and channel candidate."],
+["John Healy","VP & GM, Industrial and Robotics Division","Intel","United States","s e",3,"Industrial robotics compute and enterprise customers; chip partner and introducer."],
+["Dennys Li","President","Hisense Visual Technology","China","s",2,"Large Chinese consumer-electronics group expanding in Europe; retail and display channel."],
+["Zou Yang","Head of Corporate Branding, China","Lenovo","China","s",2,"Lenovo is a major enterprise IT vendor with channels to corporate buyers."],
+["Chris Hill","Channel & Alliances","Alibaba Cloud","United Kingdom","s e",2,"Cloud channel/alliances; partner programme for Chinese tech in Europe."],
+["Durga Malladi","EVP and GM, Technology Planning, Edge Solutions & Data Center","Qualcomm","United States","e",3,"Edge AI silicon for robots; potential platform partner."],
+["Ziad Asghar","SVP & GM of XR, Wearables and Personal AI","Qualcomm","United States","e",2,"Personal-AI and wearable silicon; interaction layer for humanoids."],
+["Rene Haas","CEO","Arm Ltd.","United States","e",2,"Chip architecture ecosystem; low odds of 1:1 time, but a key platform player."],
+["Miguel Cristino","Head of Startups, Europe","NVIDIA","Spain","e f",3,"Gateway to NVIDIA’s robotics stack and European startup programme; also an investor-network connector."],
+["Abhinav Gupta","Co-founder, President","Skild AI","United States","e f",3,"Robot “brain” company: possible hardware-software partner and best peer to learn fundraising from."],
+["Dahai Li","Co-founder & CEO","ModelBest","China","e",2,"On-device LLMs; a model partner for the robot itself."],
+["Alan Shen","MD Global","MiniMax","China","e",2,"Multimodal models (voice, video); overseas business lead."],
+["Giacomo Ficari","Director of International","Moonshot AI (Kimi)","China","e",2,"Foundation-model company going international."],
+["Tao Zhang","Co-founder & CPO","Manus AI","China","e",2,"Agent products: task planning for embodied robots."],
+["Richard Socher","Co-founder & CEO","Recursive & You.com","United States","e f",2,"AI scientist and serial founder with a broad investor network."],
+["Peter Ludwig","Co-founder & CTO","Applied Intuition","United States","e",2,"Simulation and autonomy software, relevant to robot validation."],
+["Bidhan Roy","Founder & CEO, Physical AI & Robotics","Bagel Labs","Canada","e c",2,"Physical-AI peer; possible data/model collaboration."],
+["Daniele Pucci","CEO","Generative Bionics","Italy","c",3,"European humanoid competitor: track pricing, funding and customers."],
+["Ahti Heinla","Co-Founder","Starship Technologies","Estonia","c f",2,"Delivery-robot pioneer: scaling and fleet-operations lessons."],
+["Edward Mehr","Co-Founder & CEO","Machina Labs","United States","c f",2,"Robotic manufacturing startup; a good peer for fundraising and industrial customers."],
+["Zhao Nan","COO","Bright Master Robotics","China","c",2,"Chinese robotics peer."],
+["Xinhai Sun","Founder & CEO","Synthoid AI","China","c",2,"Chinese robotics/AI peer."],
+["Li Chen","Co-founder","Unitree","China","c",2,"Humanoid/quadruped competitor: competitive intelligence."],
+["Yuli Zhao","CSO","Galbot","China","c",2,"Embodied-model robot competitor."],
+["Galbot G1","Embodied Large-Model Robot","Galbot","China","c",1,"Competitor demo robot: compare specs and interaction."],
+["UBTech U1 Pro","Ultra-realistic Humanoid Robot","UBTECH Robotics","China","c",2,"Competitor humanoid on the floor."],
+["UBTech Walker C1","Humanoid Robot","UBtech Robotics","China","c",2,"Competitor humanoid on the floor."],
+["William Shi","President","AgiBot Europe","China","i",3,"Our European head: align on priority targets and follow-up first."],
+["Agibot A3","Humanoid robot","AGIBOT","China","i",2,"Our product and the best conversation opener."],
+["PrimeBOT Q1","Personal Robot","AgiBot","China","i",2,"Our product."],
+["Leo Haojun Wang","Co-Founder & CFO","Pony.ai","China","f",3,"CFO of a capital-intensive deep-tech company: financing, listing paths, unit economics."],
+["Michael Du","CFO","XPENG Aridge Flying Cars","China","f",2,"Chinese deep-tech CFO; fundraising and listing perspective."],
+["Chenliang Shu","Co-founder & CFO","Xgrids","China","f",2,"Chinese hardware CFO."],
+["Kim Chong","Chief Risk Officer","Hong Kong Investment Corporation Limited","China","f",3,"HK sovereign-style investor; potential LP/co-investor angle for Asia-linked robotics."],
+["Ali Partovi","Founding Partner","Neo","United States","f",3,"Early-stage investor with deep AI founder network."],
+["Tony Fadell","Principal","Build Collective","France","f",3,"Hardware founder-turned-investor; highly relevant for hardware startup advice."],
+["Mike Cannon-Brookes","Co-founder & CEO","Atlassian","United States","f",2,"Founder with personal climate/deep-tech investing."],
+["Philippe Botteri","Partner","Accel","United Kingdom","f",3,""],
+["Albert Wenger","Managing Partner","Union Square Ventures","United States","f",3,""],
+["Itxaso del Palacio","General Partner","Notion Capital","United Kingdom","f",2,""],
+["Yusuf Özdalga","Partner","QED Investors","United Kingdom","f",2,""],
+["Nowi Kallen","Managing Director","Salesforce Ventures","United Kingdom","f",2,""],
+["Manuel Silva Martinez","General Partner","Mouro Capital","United Kingdom","f",2,""],
+["Larry Li","Founder & Managing Partner","Amino Capital","United States","f",3,""],
+["Sue Xu","Managing Partner","Amino Capital","United States","f",3,""],
+["Mattias Ljungman","Founder & CEO","Moonfire","United Kingdom","f",2,""],
+["Tom Mendoza","Partner","EQT Ventures","United Kingdom","f",2,""],
+["Will Wells","Partner","Speedinvest","United Kingdom","f",2,""],
+["RJ Schuurs","Partner","Antler","Netherlands","f",2,""],
+["Steve Vassallo","General Partner","Foundation Capital","United States","f",3,""],
+["Karan Mehandru","Managing Director","Madrona","United States","f",2,""],
+["Scott Beechuk","Partner","Norwest","United States","f",2,""],
+["Max Schireson","Partner","Battery Ventures","United States","f",3,""],
+["Rocio Wu","Partner","F-Prime Capital Partners","United States","f",2,""],
+["Sebastiaan Vaessen","Head of Ventures, Europe","Prosus Ventures","Netherlands","f",2,""],
+["Charly Mwangi","General Partner","Eclipse Capital","United States","f",3,"Eclipse is known for industrial/physical-economy investing; verify fit."],
+["Chon Tang","Founding Partner","SkyDeck Ventures","United States","f",2,""],
+["Rohit Sharma","Partner","True Ventures","United States","f",2,""],
+["Alex Niehenke","Partner","Scale Venture Partners","United States","f",2,""],
+["Larry Aschebrook","Founder and Managing Partner","G Squared","United States","f",3,""],
+["Muhammad Mian","Co-founder & Partner","Prysm Capital","United States","f",2,""],
+["Anand Chandrasekaran","Managing Partner","Celesta Capital","United States","f",3,"Deep-tech focused fund; verify robotics thesis."],
+["Matthieu Lavergne","Partner","Serena Capital","France","f",2,""],
+["Paul Bazin","Partner","Daphni","France","f",2,""],
+["Rainer Märkle","General Partner","HV Capital","Germany","f",2,""],
+["Tanja Emmerling","Partner","High-Tech Gründerfonds","Germany","f",3,"Deep-tech seed fund in Germany; check hardware fit."],
+["Bjorn Tremmerie","Head of Venture Capital and Impact Investing","European Investment Fund","Luxembourg","f",3,"Fund-of-funds LP access in Europe."],
+["Haya Al Ghanim","Qatar Funds Director • Funds","Qatar Investment Authority","Qatar","f",3,"Sovereign LP; relevant for large growth rounds."],
+["Shane Bourke","EMEA Venture & Growth Debt Investor","BlackRock","United Kingdom","f",2,"Venture debt for hardware scale-ups."],
+["Erick Diaz","Co-Head of EMEA Capital Markets","New York Stock Exchange","United Kingdom","f",2,"Listing path knowledge."],
+["Christine Choi","Partner","M13 Ventures","United States","f",2,""],
+["Tamara Steffens","Managing Director","Thomson Reuters Ventures","Canada","f",1,""],
+["Pedro Santos Vieira","Partner","500 Global","Portugal","f",2,""],
+["Tarik Sultan","Partner","Builders VC","Qatar","f",2,""],
+["Soumaya Ben Beya Dridje","Partner (GP)","Rasmal Ventures","Qatar","f",2,""],
+["Tala Al Jabri","Founder & Managing Partner","Wyld VC","United Arab Emirates","f",2,""],
+["Igor Ryabenkiy","Founder & Managing Partner","AltaIR Capital","United States","f",2,""],
+["Carlos Moreira da Silva","Managing Partner & Founder","33N Ventures","Portugal","f",2,"Local Lisbon investor."],
+["Stephan Morais","Investor","Indico Capital Partners","Portugal","f",2,"Local Lisbon investor."],
+["Sarah Kunst","Founder & Managing Director","Cleo Capital","United States","f",2,""],
+["Mauricio Sion","Founder & Executive Chairman","SGF Global","United States","f",2,""],
+["Robby Yung","CEO of Investments","Animoca Brands","United Kingdom","f",1,""],
+["Dan Wang","China Director","Eurasia Group","China","p",2,"China policy and geopolitics view for cross-border robotics."],
+["Alvin W. Graylin","Prof. AI Policy at UW | Digital Fellow","Stanford HAI","United States","p",2,"US-China AI policy bridge."],
+["Henna Virkkunen","Executive Vice-President for Technological Sovereignty, Security, and Democracy","European Commission","Belgium","p",2,"EU tech regulation that will shape robot compliance in Europe."],
+["Xiaoxia Qi","Director General of the Bureau of International Cooperation","Cyberspace Administration of China","China","p",2,"Data/AI governance cooperation."],
+["Jiong Gong","Professor of Economics","University of International Business and Economics","China","p",1,"China-Europe trade perspective."],
+["Victor Gao","Chair Professor, Soochow University; Vice President, CCG","Center for China and Globalization (CCG)","China","p",1,""],
+["Matthew Prince","Co-founder & CEO","Cloudflare","United States","o",1,""],
+["George Kurtz","Co-founder & CEO","CrowdStrike","United States","o",1,""],
+["Deli Zhao","Founder and President","Xpeng Aridge","China","o",2,"Chinese deep-tech peer going global: swap European market-entry notes."],
+["Michele Catasta","President","Replit","United States","o",1,""],
+["Xiaoguang Chen","Co-founder & CEO","Eversec Technology","China","o",1,"Data security: robot data compliance."],
+["Yuxuan Xia","Founder & CEO","Xynova","China","o",1,""]
+];
+var BB=`Abby Ridsdill Smith|Corporate Communications Manager|Atlassian Williams F1 Team|UK
+Diana Layfield|Group CEO|Monzo|UK
+David Jones|Founder|DMA Design (now Rockstar North)|UK
+James Vowles|Team Principal|Atlassian Williams F1 Team|UK
+Manu Orssaud|CMO|Duolingo|UK
+Ronan Harris|Chief Commercial Officer|Snap|UK
+Arjun Kharpal|Senior Technology Correspondent|CNBC|UK
+Ash Sarkar|Senior Editor|Novara Media|UK
+Isobel Sita-Lumsden|Global Head of Business Marketing|TikTok|UK
+Louise McEwen|CMO|McLaren|UK
+Tilly Norwood|Actress|Particle 6|UK
+Sam Stephenson|Co-founder|Granola|UK
+Reya El-Salahi|Presenter / Journalist|CGTN Europe|UK
+Eline van der Velden|Founder & CEO|Particle 6|UK
+Peter Kenyon|Advisor|Atlassian Williams F1 Team|UK
+Deborah Wajsbrot|Associate Director & Head of Partnerships|Revolut|UK
+Nikola Mrkšić|Co-founder & CEO|PolyAI|UK
+Aaron Bastani|Co-Founder/Contributing Editor|Novara Media|UK
+Mike Butcher|Founder|Pathfounders|UK
+Sheikha Maytha Bint Maktoum|Founder|MindFriend|UK
+Anton Osika|Co-founder & CEO|Lovable|SE
+Sairah Ashman|CEO|Wolff Olins|UK
+Patrick Boyle|Patrick Boyle On Finance|Palomar Capital Management|UK
+Derya Matras|VP, EMEA|Meta Platforms, Inc.|UK
+Zhiyuan Liu|Quantum Researcher|Tsinghua University|CN
+Gabriel Le Roux|Co-Founder & CEO|Primer|UK
+Charlie Smith|Chief Brand Officer|Nothing|UK
+Carissa Véliz|Associate Professor in Philosophy|Oxford Institute for Ethics in AI|UK
+Adams Fan|Chief Creative Officer|F5 Shanghai|CN
+Robert Booth|Technology Editor|The Guardian UK|UK
+Jolyon Rubinstein|BAFTA-winning writer & performer|Jolly Griffin Productions|UK
+Jinrong Xie|Founder & CEO|TESSERAX|CN
+Mary Hurd|Co-founder|Haavn|UK
+Young Wang|Founder & CEO|Acti|CN
+Miles Coleman|Producer & Head of Development|Ventureland|UK
+Monica Wang|Founder|AGI Villa|CN
+Rosie Turner|Co-Founder & Co-CEO|InChorus Group|UK
+Chung-Yan Chow|Editor-in-chief|South China Morning Post|CN
+Tom Allen|Founder|Tiny Media / The AI Journal|UK
+Jianhua Li|Correspondent & News Anchor|CGTN Europe|CN
+Elena Casas-Montanez|Reporter|Reuters|UK
+Rajan Kapur|Head of Commercial Development, Race Promotion|Formula 1|UK
+Nick Yu|Chief Product Officer|OMOWAY|CN
+Jacob Nathan|Founder & CEO|Epoch Biodesign|UK
+Takaya Taguchi|Co-founder & CEO|Helical Fusion|JP
+Robert Schifreen|CEO|The Less Consultancy|UK
+Rodion Shishkov|Co-Founder & CEO|All3|UK
+Thibaut Courtois|Real Madrid Footballer & Investor|NXTPLAY Capital|ES
+Jake Jurewicz|Co-Founder & CEO|Blue Energy|UK
+James Lo|Co-Founder & CEO|Ethos|UK
+Amit Katwala|Feature writer and editor|MIT Technology Review|UK
+Miriam Cates|Former MP and Commentator|The Centre for Social Justice|UK
+Kathleen Tyson|Founder/CEO, former Central Banker (New York Fed)|Pacemaker|UK
+Zabrina Johal|CEO|Zap Energy|US
+Mimi Yates|Multimedia Reporter|The Daily Mail|UK
+Stanislav Vishnevskiy|Co-founder & CTO|Discord|US
+Eleanor Pringle|Senior Reporter Economics and Markets|Fortune|UK
+Mahi de Silva|Co-Founder & Chief Strategy Officer|Higgsfield|US
+Anshika Srivastava|COO|Apoha|UK
+Laureen Meroueh|Founder & CEO|Hertha Metals|US
+Claire Sanderson|Editor-in-Chief and Podcast Host|Women’s Health UK|UK
+Al Carns|Labour MP, former Minister for the Armed Forces|British Government|UK
+Lisa Eadicicco|Tech Editor|CNN|US
+David Savage|Podcast Host & Group Technology Evangelist|Harvey Nash|UK
+Jiaze Li|AI Director|WPP|UK
+Jordi Romero|Co-founder & CEO|Factorial|ES
+Ayesha Chowdhury|Senior Global Digital Lead|BBC|UK
+Jeremy Fraenkel|Co-founder & CEO|Fundamental|US
+Owen Jones|Columnist|The Guardian|UK
+Jill Kramer|Chief Marketing & Communications Officer|Mastercard|US
+Barry Malone|Journalist and commentator|Freelance|UK
+Rahul Vohra|Founder of Superhuman Mail|Superhuman|US
+Rebecca Hutson|Editor-in-chief|The News Movement|UK
+Abigail Slater|Former Assistant Attorney General|The US Government|US
+Alexis Self|Foreign Editor|Monocle|UK
+Mary Robinson|Founding Member|The Elders|IE
+Neil Barrie|Co-Founder & Global CEO|TwentyFirstCenturyBrand|UK
+Andrew Smith|Global Head of Brand|Vinted|NL
+Laura Ellis|Head of Technology Forecasting|BBC|UK
+Matt Kennard|Author and Investigative Journalist|Freelance|UK
+James Galbraith|Professor, LBJ School of Public Affairs|University of Texas at Austin|US
+Alan MacLeod|Senior Staff writer|Mint Press|UK
+Francoise Brougher|CEO|Pebl (Velocity Global)|US
+Maeve Campbell|Journalist|Channel 4 News|UK
+Kamil Sindi|CTO|Runway|US
+Simon Ince|CTO|Lush|UK
+Timothy Young|CEO|Jasper|US
+Axel Threlfall|Editor-at-large|Thomson Reuters|UK
+Andreas Blattmann|Co Founder|Black Forest Labs|DE
+Neil Lawrence|Co-founder & Chief Scientist|Trent AI|UK
+Alicia Skubick|Chief Customer Officer|Trustpilot|UK
+Nick Thompson|CEO|The Atlantic|US
+Tristan Thomas|Director for Customer First|Department for Science, Innovation & Technology|UK
+Jen Wong|COO|Reddit|US
+Lisa Jacobs|CEO|Funding Circle|UK
+Joaquin Cuenca Abela|Cofounder & CEO|Magnific|ES
+Luke Vargas|Podcast Host of WSJ’s What’s News|The Wall Street Journal|UK
+Barbra Gago|Chief Strategy & Marketing Officer|Lattice|US
+Marcel Marcondes|Global CMO|Anheuser-Busch InBev|US
+Brian Baglow|Founder|Scottish Games Network|UK
+Gonçalo Gaiolas|Chief Product Officer|DeepL|PT
+Nick Pringle|Chief Creative Officer EMEA|R/GA|UK
+Karen Saltser|Chief Executive Officer|Bloomberg Media|US
+Anita Hawser|Europe Editor|The Banker (Financial Times)|UK
+Michael Johnson|Olympic Champion|Athlete|US
+Calum Chace|Co-founder|Conscium|UK
+Dan Neely|Co-Founder and CEO|Vermillio|US
+Sarah Meron|Chief Corporate Affairs & Brand Officer|IBM|US
+May Habib|Co-Founder & CEO|WRITER|US
+Carlos Moedas|Mayor|City of Lisbon|PT
+Tony Fadell Build Collective|Principal|Build Collective|FR
+Daniela Gabor|Professor of Economics|SOAS University of London|UK
+Gabriele Mazzini|Architect of EU AI Act & Fellow|MIT Media Lab|US
+James Palles-Dimmock|CEO|Quantum Motion Technologies|UK
+Laurie Menoud|Founding Partner|At One Ventures|US
+Benjamin Faes|CEO|RWS Group|UK
+Chris Smalls|Co-founder, former president|Amazon Labor Union|US
+Martin Sokk|Co-Founder, CEO|lightyear|UK
+Clare Gambardella|Chief Customer Officer|Zopa|UK
+Rose Wang|Chief Operating Officer|Bluesky|US
+Ann Kristin Glenster|Professor, Senior Policy Adviser|University of Cambridge|UK
+Sara Fischer|Media Correspondent|Axios|US
+Marcelo Lebre|Co-Founder and President|Remote|PT
+Joshua Wöhle|CEO|Mindstone|UK
+Rhiannon White|CEO|Clue|DE
+Jim Edwards|Executive Editor|Fortune|UK
+Daniela Braga|Founder & CEO|Defined.ai|US
+Jacob Sever|Co-founder and Chief Innovation Officer|Sumsub|UK
+Andrew Sever|Co-founder and CEO|Sumsub|UK
+Beatrice Cossa-Dumurgier|CEO for Western Europe|Revolut|FR
+Leah Davis|CMO|SailGP|UK
+Lara O’Reilly|Chief Correspondent|Business Insider|UK
+Rodrigo Moran|Global Director of Creative|Microsoft|US
+Nanna Andersen|Managing Director, New Growth & Ventures|H&M Group|SE
+Jon Rosenblatt|VP of Global Marketing, Clash of Clans|Supercell|UK
+Brian Berzin|Co-founder & CEO|Thea Energy|US
+Jonathan Adashek|SVP and Chief Global Affairs Officer|IBM|US
+Edith Harbaugh|Co-founder & CEO|LaunchDarkly|US
+Nalin Patel|Director of Research|PitchBook|UK
+Navina Rajan|Senior Analyst, EMEA Private Capital|PitchBook|UK
+Mikayel Vardanyan|Co Founder & COO|Picsart|US
+Susan Li|National Correspondent|Fox Business|US
+Fernando Cabral|Managing Partner|Djassi Ventures|UK
+Adam Kobeissi|Founder & Editor-in-Chief|The Kobeissi Letter|US
+Des Hogan|Commissioner|Data Protection Commission|IE
+Eleanor Lightbody|CEO|Luminance|UK
+Julie Choi|CMO|Cerebras|US
+Andy Hock|CSO|Cerebras|US
+Katherine Maher|CEO|NPR|US
+Michael Komasinski|CEO|Criteo|US
+Jamie Hutton|CTO|Quantexa|UK
+Cristina Ferreira|TV Host, Executive|TVI|PT
+Paulo Magro da Luz|Secretary of State for Government Simplification|Government of Portugal|PT
+David Gardner|Co-founder & GP|London Venture Partners|UK
+Samar Abbas|Co-Founder & CEO|Temporal|US
+Jager McConnell|CEO|Crunchbase|US
+Julie Pace|SVP and Executive Editor|Associated Press|US
+Michael Broughton|Co-founder & Partner|Sports Investment Partners|UK
+Jacob Lauritzen|CTO|Legora|SE
+Mimoza Kusari-Lila|Minister of Trade, Industry, Entrepreneurship and Innovation|Government of Kosovo|Kosovo
+Mehul Srivastava|Senior Foreign Affairs Correspondent|Financial Times|UK
+Marc Gené|Ambassador|Ferrari|ES
+Sam Pasupalak|Co-founder & CEO|Skyfall AI|US
+Francis Shanahan|Chief Technology Officer|Peloton|US
+Seung-Eun (SE) Lee|Partner|Lamora Group|UK
+Paul Tighe|Secretary of the Dicastery for Culture and Education|The Vatican|IT
+Sinéad O’Sullivan|Strategy and Competitiveness|Harvard Business School|US
+Dan Gardner|Co-founder & Executive Chairman|Code and Theory|US
+Paolo Benanti|AI Advisor to the Vatican and Italian Govt|Pontifical Gregorian University|IT
+Aldo Faisal|Professor and Director|UKRI Centres in AI for Health, Imperial College London|UK
+George Aivazoglou|Managing Director, Europe & Middle East|NBA|UK
+Matthew Rogerson|Director of Global Public Policy & Platform Strategy|Financial Times|UK
+Peter Ward|Co-founder & CEO|Humanity|UK
+Don McGuire|EVP and CMO|Qualcomm|US
+Giovanni Marescalchi|CTO|ThoughtMachine|UK
+João Rui Ferreira|Secretary of State for Economy|Government of Portugal|PT
+Ollie Whitehouse|Chief Technology Officer|National Cyber Security Centre|UK
+Alex Kantrowitz|Founder & Host|Big Technology Podcast|US
+Danny Menken|Co-Founder & Managing Partner|Athvance Capital|UK
+Rockman Zhang|CTO|ByBit|AE
+Tyler Denk|Co-Founder & CEO|Beehiiv|US
+Caleb Silver|Chief Business Editor|Investopedia|US
+Sonia Azzouzi Boudie|Deputy CEO|iBanFirst|UK
+Ameer Ibrahim|Managing Partner|Callian Capital Group|UK
+Philip Rathle|CTO|Neo4j|US
+Massimo Marinelli|Founder, Berkida Ventures & Senior Advisor|49ers Enterprises|UK
+Hamza Dirir|COO|Scrubbe Inc|UK
+Babak Hodjat|Chief AI Officer|Cognizant|US
+Mazin Gilbert|Executive Director|Agentic AI Foundation|US
+Burke Stephenson|Head of Cybersecurity Sales - EMEA|Lenovo|UK
+Chris Koehler|CMO|Twilio|US
+Sumit Dhawan|CEO|Proofpoint, Inc.|US
+Filip Kaliszan|Founder & CEO|Verkada|US
+Ahmed Shihab|CPO|Western Digital|US
+Marnie Wilking|Chief Security Officer|Booking.com|NL
+Anthony Grieco|SVP, Chief Security & Trust Officer|Cisco Systems, Inc.|US
+John Koetsier|Forbes columnist & Tech First Podcast Host|Forbes|CA
+Martin Schroeter|CEO|Kyndryl|US
+Aman Bhutani|CEO|GoDaddy|US
+Arvind Jain|Founder & CEO|Glean|US
+Kirill Skrygan|CEO|JetBrains|Czechia
+Hayden Brown|CEO & President|Upwork|US
+Ian Rogers|Chief Human Agency Officer & Board Member|Ledger|FR
+Daniela Espírito Santo|Journalist|Rádio Renascença|PT
+Gonçalo Matias|Minister in the Cabinet of the Prime Minister and of State Reform|Government of Portugal|PT
+Bernardo Correia|Secretary of State for Digitalisation|Government of Portugal|PT
+Joaquim Miranda Sarmento|Minister of State and of Finance|Government of Portugal|PT
+Carmem Domingues|former White House Senior AI Advisor|Future Government Institute|US
+Ana Casaca|President|AICEP Portugal Trade & Investment Agency|PT
+Alexandre Teixeira dos Santos|President|Startup Portugal|PT
+Gil Azevedo|Executive Director|Unicorn Factory Lisboa|PT`;
+var CC={UK:"United Kingdom",US:"United States",CN:"China",FR:"France",DE:"Germany",ES:"Spain",PT:"Portugal",IT:"Italy",IE:"Ireland",NL:"Netherlands",SE:"Sweden",BE:"Belgium",CH:"Switzerland",CA:"Canada",BR:"Brazil",QA:"Qatar",AE:"United Arab Emirates",JP:"Japan"};
+function base(){var m={},o=B.map(mk);o.forEach(function(d){m[d.n.toLowerCase()]=1});BB.split("\n").forEach(function(l){var a=l.split("|");if(a.length<4||m[a[0].toLowerCase()])return;var x=auto(a[1],a[2]);o.push({n:a[0],t:a[1],c:a[2],cy:CC[a[3]]||a[3],g:x.g,p:x.p,w:"",sp:false,cur:false})});return o}
+var SP="agibot a3,tao zhang,li chen,galbot g1,michele catasta,dahai li,fei xu,leo haojun wang,alan shen,ling ge,william shi,richard socher,irene long,yuxuan xia,yuli zhao,deli zhao,jiong gong,xiaoxia qi,matthew prince,xiaoguang chen".split(",");
+var CT=new Set("United Kingdom,United States,China,France,Germany,Spain,Portugal,Italy,Ireland,Netherlands,Sweden,Belgium,Switzerland,Canada,Brazil,Brasil,Qatar,United Arab Emirates,Japan,Australia,Singapore,Hong Kong,Poland,Czechia,Ukraine,Slovakia,Austria,Denmark,Norway,Finland,Estonia,Lithuania,Latvia,Luxembourg,Hungary,Croatia,Serbia,Romania,Bulgaria,Greece,Cyprus,Slovenia,Albania,Kosovo, Republic of,Türkiye,Turkey,India,Israel,Taiwan,Korea (Republic of),New Zealand,Azerbaijan,Armenia,Kazakhstan,Andorra,Colombia,Angola,Mexico,Argentina,Chile,Saudi Arabia,Egypt,Nigeria,South Africa,Kenya,Morocco,Pakistan,Indonesia,Malaysia,Thailand,Vietnam,Philippines,Bahrain,Kuwait,Oman,Jordan,Tajikistan,Uzbekistan,Iceland,Malta".split(",").concat(["Kosovo, Republic of"]));
+var LB={s:"Key customer / channel",f:"Finance network",e:"Tech ecosystem",c:"Competitor / peer",i:"Internal",p:"Policy / gov",m:"Media",o:"Other"};
+var R={m:/journalist|editor|reporter|correspondent|presenter|podcast|anchor|columnist|publisher|broadcast|producer|writer|newsletter|\bhost\b/,
+p:/minister|\bmep\b|commission|government|secretary of state|mayor|parliament|ministry|agency|council of europe|authority|aicep|startup portugal|invest qatar|invest rio|unicorn factory|ambassador|\bmp\b/,
+f:/venture|capital|investor|investment|\bfund\b|angel|family office|blackrock|stock exchange|\bvc\b|private equity|growth equity|general partner|managing partner/,
+c:/robot|humanoid|embodied|physical ai|bionics|unitree|galbot|ubtech|drone/,
+e:/nvidia|qualcomm|arm ltd|intel\b|cerebras|moonshot|minimax|modelbest|reka|black forest|semiconductor|chip/,
+s:/siemens|bosch|lenovo|hisense|xiaomi|rokid|mercedes|tomtom|\bibm\b|amazon|microsoft|meta platforms|cognizant|kyndryl|nestl|inbev|h&m|puma|sanofi|aviva|hitachi|alibaba|tencent|huawei|samsung|sony|vodafone|schneider|\babb\b|\bdhl\b|salesforce|oracle|google|\bsap\b|booking\.com|mastercard|zalando/};
+var SEN=/chief|ceo|cto|cfo|coo|cmo|president|vp\b|vice|head of|director|founder|partner|general manager|managing/;
+function auto(t,c){var s=(t+" "+c).toLowerCase(),g=[];
+if(/agibot/.test(s))return{g:"i",p:2};
+if(R.m.test(s)&&!R.f.test(s))return{g:"m",p:1};
+if(R.p.test(s)&&!R.f.test(s))return{g:"p",p:1};
+["f","c","e","s"].forEach(function(k){if(R[k].test(s))g.push(k)});
+if(!g.length)return{g:"o",p:1};
+var p=SEN.test(s)?2:1;if(g.indexOf("f")>-1&&/general partner|managing partner|founding partner/.test(s))p=2;
+return{g:g.join(" "),p:p}}
+var ALL=[],F="all",Q="",SORT="pri",LIM=150,WH="all",SPS={},BASEARR=[];
+function norm(x){return x.replace(/\s+/g," ").trim()}
+function curated(){var m={};B.forEach(function(b){m[b[0].toLowerCase()]=b});return m}
+function mk(b,sp){return{n:b[0],t:b[1],c:b[2],cy:b[3],g:b[4],p:b[5],w:b[6]||"",sp:SP.indexOf(b[0].toLowerCase())>-1,cur:!!b[6]||b[5]>=2&&b[4]!="o"&&b[4]!="m"}}
+function parse(txt){var L=txt.split(/\r?\n/).map(norm).filter(Boolean),st=0;
+for(var i=0;i<Math.min(L.length,60);i++)if(/shaking hands|^Show Results$/i.test(L[i])){st=i+1;break}
+var out=[],cur=[],cm=curated();
+L.slice(st).forEach(function(l){if(CT.has(l)){if(cur.length>=2){var n=cur[0],r=cur.slice(1);while(r.length&&norm(r[0])==n)r.shift();
+var t=r[0]||"",c=r.slice(1).join(" ");var k=cm[n.toLowerCase()];
+if(k)out.push(mk(k));else{var a=auto(t,c);out.push({n:n,t:t,c:c,cy:l,g:a.g,p:a.p,w:"",sp:SP.indexOf(n.toLowerCase())>-1,cur:false})}}cur=[]}else cur.push(l)});
+var seen={},res=[];out.forEach(function(o){var k=o.n.toLowerCase()+"|"+o.c.toLowerCase();if(!seen[k]){seen[k]=1;res.push(o)}});return res}
+function has(d,k){return k=="sp"?d.sp:k=="cur"?d.cur:d.g.split(" ").indexOf(k)>-1}
+function stats(){var h=[["People",ALL.length],["Speakers",ALL.filter(function(d){return d.sp}).length],["Key targets",ALL.filter(function(d){return has(d,"s")}).length],["Finance",ALL.filter(function(d){return has(d,"f")}).length],["Ecosystem",ALL.filter(function(d){return has(d,"e")}).length],["Competitors",ALL.filter(function(d){return has(d,"c")}).length],["Media",ALL.filter(function(d){return has(d,"m")}).length]];
+document.getElementById("st").innerHTML=h.map(function(x){return"<div><b>"+x[1]+"</b><span>"+x[0]+"</span></div>"}).join("");document.getElementById("n").textContent=ALL.length}
+function esc(x){return String(x).replace(/[&<>"]/g,function(m){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]})}
+var FL=[["all","All"],["cur","Curated"],["s","Key targets"],["f","Finance"],["e","Ecosystem"],["c","Competitors"],["i","Internal"],["p","Policy"],["m","Media"],["o","Other"]];
+function nav(){var b=document.getElementById("bar");b.innerHTML=FL.map(function(f){return'<button class="'+(F==f[0]?"on":"")+'" data-k="'+f[0]+'">'+f[1]+"</button>"}).join("")+'<input type="search" id="q" placeholder="Search name / company / title" value="'+esc(Q)+'"><select id="wh"><option value="all">Speakers + attendees</option><option value="sp">Speakers only</option><option value="at">Attendees only</option></select><select id="so"><option value="pri">Sort: priority</option><option value="az">Sort: name A–Z</option><option value="co">Sort: company</option></select>';
+b.querySelectorAll("button").forEach(function(x){x.onclick=function(){F=x.dataset.k;LIM=150;nav();draw()}});
+var q=document.getElementById("q");q.oninput=function(){Q=q.value;LIM=150;draw()};var wh=document.getElementById("wh");wh.value=WH;wh.onchange=function(){WH=wh.value;LIM=150;draw()};var so=document.getElementById("so");so.value=SORT;so.onchange=function(){SORT=so.value;draw()}}
+function draw(){var r=ALL.filter(function(d){return(F=="all"||has(d,F))&&(WH=="all"||(WH=="sp")==!!d.sp)&&(d.n+" "+d.c+" "+d.t+" "+d.cy).toLowerCase().indexOf(Q.toLowerCase())>-1});
+r.sort(function(a,b){if(SORT=="az")return a.n.localeCompare(b.n);if(SORT=="co")return a.c.localeCompare(b.c);var ka=(has(a,"s")||has(a,"f")?1:0),kb=(has(b,"s")||has(b,"f")?1:0);return(b.p-a.p)||((b.sp?1:0)-(a.sp?1:0))||(b.cur-a.cur)||(kb-ka)});
+var shown=r.slice(0,LIM);
+document.getElementById("g").innerHTML=shown.map(function(d){var cls=has(d,"s")&&d.p>=3?"hi":(has(d,"f")&&d.p>=3?"hf":"");
+var tg=d.g.split(" ").map(function(k){return'<span class="t '+k+'">'+LB[k]+"</span>"}).join("")+(d.sp?'<span class="t k">Speaker</span>':"");
+return'<div class="cd '+cls+(d.sp?' sp':'')+'"><div class="nm">'+esc(d.n)+'</div><div class="ti">'+esc(d.t)+" · "+esc(d.c)+" · "+esc(d.cy)+'</div><div class="tg">'+tg+'<span class="pr">'+"★".repeat(d.p)+"</span></div>"+(d.w?'<p class="why">'+esc(d.w)+"</p>":"")+"</div>"}).join("")||"<p class='sub'>No matches</p>";
+var mb=document.getElementById("mb");if(r.length>LIM){mb.style.display="block";mb.textContent="Show more ("+(r.length-LIM)+" left)";mb.onclick=function(){LIM+=250;draw()}}else mb.style.display="none"}
+function addsp(txt){var r=parse(txt);r.forEach(function(d){d.sp=true;SPS[d.n.toLowerCase()]=d});return r.length}
+function load(arr){var have={};arr.forEach(function(d){var k=d.n.toLowerCase();have[k]=1;if(SPS[k])d.sp=true});Object.keys(SPS).forEach(function(k){if(!have[k])arr.push(SPS[k])});ALL=arr;stats();nav();draw()}
+function spimp(txt){var m=document.getElementById("msg2"),n=addsp(txt);if(n<5){m.textContent="No entries found. Paste the full speakers page text.";return}m.textContent=n+" speakers marked.";load(BASEARR.slice());try{localStorage.setItem("wssp",txt)}catch(e){}}
+function imp(txt){var r=parse(txt),m=document.getElementById("msg");
+if(r.length<5){m.textContent="Could not find entries. Make sure you pasted the page text including country lines.";return}
+BASEARR=r;load(r.slice());m.textContent=r.length+" people imported.";document.getElementById("det").open=false;
+try{localStorage.setItem("wsraw",txt)}catch(e){}}
+document.getElementById("gob").onclick=function(){imp(document.getElementById("ta").value)};
+document.getElementById("fi").onchange=function(e){var f=e.target.files[0];if(!f)return;var rd=new FileReader();rd.onload=function(){document.getElementById("ta").value=rd.result;imp(rd.result)};rd.readAsText(f)};
+var saved=null;try{saved=localStorage.getItem("wsraw")}catch(e){}
+BASEARR=base();if(saved){var rr=parse(saved);if(rr.length>=5)BASEARR=rr}
+var sv=null;try{sv=localStorage.getItem("wssp")}catch(e){}
+if(sv)addsp(sv);
+load(BASEARR.slice());
+document.getElementById("gob2").onclick=function(){spimp(document.getElementById("ta2").value)};
+document.getElementById("fi2").onchange=function(e){var f=e.target.files[0];if(!f)return;var rd=new FileReader();rd.onload=function(){document.getElementById("ta2").value=rd.result;spimp(rd.result)};rd.readAsText(f)};
+</script></body></html>
